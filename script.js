@@ -2,18 +2,18 @@
 Does not save username and password to external file but yells at the user if the username is less than eight characters or the passwords
 do not match.
 
-Version 1.0.0 - Dylan Nichols 2017 */
+Version 1.1.0 - Dylan Nichols 2017 */
 
 // connects the input from the form to js variables
 let username = document.querySelector("#username")
-let pass1 = document.querySelector("#pw1")
-let pass2 = document.querySelector("#pw2")
+let pass1 = document.querySelector("#pass1")
+let pass2 = document.querySelector("#pass2")
 let submit = document.querySelector("#submit")
 
 // checks the value of the username box and yells if it is less than 8 characters
 let  ValidateUsername = ()  => {
     if (username.value.length < 8) {
-        document.querySelector("#tooshort").innerHTML = "Your username must be at least 8 character"
+        document.querySelector("#tooshort").innerHTML = "Your username must be at least 8 characters"
         document.querySelector("#success").innerHTML = "Please try again"
     } else {
         return true;
