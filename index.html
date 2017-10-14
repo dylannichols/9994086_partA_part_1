@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("plane2.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div class="col-5">
+                <h2 style="padding-top:100px">Rotovegas Airlines</h2>
+                <h5 style="padding-top:25px">Register your account:</h5>
+                <form id="form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="username" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div id="tooshort" style="color:red"></div>
+                    <div class="form-group">
+                        <label for="pass1">Password</label>
+                        <input type="password" class="form-control" id="pass1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass2">Re-enter Password</label>
+                        <input type="password" class="form-control" id="pass2" placeholder="Re-enter Password">
+                    </div>
+                    <div id="nomatch" style="color:red"></div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </form>
+                <div id="success"></div>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
